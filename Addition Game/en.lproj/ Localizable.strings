@@ -1,0 +1,10 @@
+/* 
+   Localizable.strings
+  Addition Game
+
+  Created by Yaroslav Sarnitskiy on 11.06.17.
+  Copyright © 2017 GS Develop Inc. All rights reserved.
+*/
+
+ENDLESS_MODE="Endless Mode Score";
+

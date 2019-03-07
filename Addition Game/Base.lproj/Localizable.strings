@@ -1,0 +1,19 @@
+/* 
+   Localizable.strings
+  Addition Game
+
+  Created by Yaroslav Sarnitskiy on 11.06.17.
+  Copyright © 2017 GS Develop Inc. All rights reserved.
+*/
+
+ENDLESS_MODE="Endless Mode Score";
+TIME_MODE="Time Mode Best Score";
+
+// Первый экран
+SCORE="Score";
+CORRECT_INCORRECT="Correct / Incorrect";
+CORRECT="Correct :)";
+INCORRECT="Incorrect :(";
+
+//Время
+TIME="Time Left";

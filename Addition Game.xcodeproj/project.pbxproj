@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D2428B01EED7E2800F6E7D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D2428B21EED7E2800F6E7D3 /* Localizable.strings */; };
+		6D2428BC1EF3992E00F6E7D3 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2428BB1EF3992E00F6E7D3 /* tick.mp3 */; };
 		6D26408B1DF55B6F00C7ABAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26408A1DF55B6F00C7ABAA /* AppDelegate.swift */; };
 		6D26408D1DF55B6F00C7ABAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26408C1DF55B6F00C7ABAA /* ViewController.swift */; };
 		6D2640901DF55B6F00C7ABAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D26408E1DF55B6F00C7ABAA /* Main.storyboard */; };
 		6D2640921DF55B6F00C7ABAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2640911DF55B6F00C7ABAA /* Assets.xcassets */; };
 		6D2640951DF55B6F00C7ABAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2640931DF55B6F00C7ABAA /* LaunchScreen.storyboard */; };
+		6D2640A11DF8DF9100C7ABAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2640A01DF8DF9100C7ABAA /* MainViewController.swift */; };
+		6D2640A31DFA09E100C7ABAA /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2640A21DFA09E100C7ABAA /* TimeViewController.swift */; };
+		6D2648D41EE5F58F004D65D8 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2648D31EE5F58F004D65D8 /* lose.mp3 */; };
+		6D2648D61EE5F613004D65D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2648D51EE5F613004D65D8 /* AVFoundation.framework */; };
+		6D2648D81EE5F849004D65D8 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2648D71EE5F849004D65D8 /* win.mp3 */; };
+		6D2648DA1EE5F985004D65D8 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D2648D91EE5F985004D65D8 /* click.mp3 */; };
+		6D7053E6204F176600A0B313 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7053E5204F176600A0B313 /* GameKit.framework */; };
+		6DA0CD3D1E0C4227002E3212 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA0CD3C1E0C4227002E3212 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D2428AD1EED709B00F6E7D3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		6D2428B11EED7E2800F6E7D3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6D2428B31EED809800F6E7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6D2428BB1EF3992E00F6E7D3 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
 		6D2640871DF55B6F00C7ABAA /* Addition Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Addition Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D26408A1DF55B6F00C7ABAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D26408C1DF55B6F00C7ABAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +36,14 @@
 		6D2640911DF55B6F00C7ABAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D2640941DF55B6F00C7ABAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D2640961DF55B6F00C7ABAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D2640A01DF8DF9100C7ABAA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6D2640A21DFA09E100C7ABAA /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		6D2648D31EE5F58F004D65D8 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		6D2648D51EE5F613004D65D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6D2648D71EE5F849004D65D8 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		6D2648D91EE5F985004D65D8 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		6D7053E5204F176600A0B313 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		6DA0CD3C1E0C4227002E3212 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7053E6204F176600A0B313 /* GameKit.framework in Frameworks */,
+				6D2648D61EE5F613004D65D8 /* AVFoundation.framework in Frameworks */,
+				6DA0CD3D1E0C4227002E3212 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +65,7 @@
 			children = (
 				6D2640891DF55B6F00C7ABAA /* Addition Game */,
 				6D2640881DF55B6F00C7ABAA /* Products */,
+				6DA0CD3B1E0C4227002E3212 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,39 @@
 		6D2640891DF55B6F00C7ABAA /* Addition Game */ = {
 			isa = PBXGroup;
 			children = (
+				6D2648C61EE5F3D0004D65D8 /* Sounds */,
 				6D26408A1DF55B6F00C7ABAA /* AppDelegate.swift */,
 				6D26408C1DF55B6F00C7ABAA /* ViewController.swift */,
+				6D2640A01DF8DF9100C7ABAA /* MainViewController.swift */,
+				6D2640A21DFA09E100C7ABAA /* TimeViewController.swift */,
 				6D26408E1DF55B6F00C7ABAA /* Main.storyboard */,
 				6D2640911DF55B6F00C7ABAA /* Assets.xcassets */,
 				6D2640931DF55B6F00C7ABAA /* LaunchScreen.storyboard */,
 				6D2640961DF55B6F00C7ABAA /* Info.plist */,
+				6D2428B21EED7E2800F6E7D3 /* Localizable.strings */,
 			);
 			path = "Addition Game";
+			sourceTree = "<group>";
+		};
+		6D2648C61EE5F3D0004D65D8 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6D2648D31EE5F58F004D65D8 /* lose.mp3 */,
+				6D2648D71EE5F849004D65D8 /* win.mp3 */,
+				6D2648D91EE5F985004D65D8 /* click.mp3 */,
+				6D2428BB1EF3992E00F6E7D3 /* tick.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		6DA0CD3B1E0C4227002E3212 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7053E5204F176600A0B313 /* GameKit.framework */,
+				6D2648D51EE5F613004D65D8 /* AVFoundation.framework */,
+				6DA0CD3C1E0C4227002E3212 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,13 +142,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "GS Develop Inc.";
 				TargetAttributes = {
 					6D2640861DF55B6F00C7ABAA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 69L52YT426;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,9 +183,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2648D81EE5F849004D65D8 /* win.mp3 in Resources */,
+				6D2428BC1EF3992E00F6E7D3 /* tick.mp3 in Resources */,
 				6D2640951DF55B6F00C7ABAA /* LaunchScreen.storyboard in Resources */,
+				6D2648D41EE5F58F004D65D8 /* lose.mp3 in Resources */,
+				6D2648DA1EE5F985004D65D8 /* click.mp3 in Resources */,
 				6D2640921DF55B6F00C7ABAA /* Assets.xcassets in Resources */,
 				6D2640901DF55B6F00C7ABAA /* Main.storyboard in Resources */,
+				6D2428B01EED7E2800F6E7D3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2640A11DF8DF9100C7ABAA /* MainViewController.swift in Sources */,
+				6D2640A31DFA09E100C7ABAA /* TimeViewController.swift in Sources */,
 				6D26408D1DF55B6F00C7ABAA /* ViewController.swift in Sources */,
 				6D26408B1DF55B6F00C7ABAA /* AppDelegate.swift in Sources */,
 			);
@@ -145,10 +211,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6D2428B21EED7E2800F6E7D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D2428B11EED7E2800F6E7D3 /* ru */,
+				6D2428B31EED809800F6E7D3 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		6D26408E1DF55B6F00C7ABAA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6D26408F1DF55B6F00C7ABAA /* Base */,
+				6D2428AD1EED709B00F6E7D3 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -168,20 +244,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -217,20 +303,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -262,9 +358,10 @@
 				DEVELOPMENT_TEAM = 69L52YT426;
 				INFOPLIST_FILE = "Addition Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "self.ed.gsdevelop.Addition-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = dodavashki.gs.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -275,9 +372,10 @@
 				DEVELOPMENT_TEAM = 69L52YT426;
 				INFOPLIST_FILE = "Addition Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "self.ed.gsdevelop.Addition-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = dodavashki.gs.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -300,6 +398,7 @@
 				6D26409B1DF55B6F00C7ABAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

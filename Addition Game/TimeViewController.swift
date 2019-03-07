@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  TimeViewController.swift
 //  Addition Game
 //
-//  Created by Yaroslav Sarnitskiy on 05.12.16.
+//  Created by Yaroslav Sarnitskiy on 08.12.16.
 //  Copyright © 2016 GS Develop Inc. All rights reserved.
 //
 
@@ -10,14 +10,13 @@ import UIKit
 import AudioToolbox
 import AVFoundation
 
-// score here, it is for global use
+class TimeViewController: UIViewController {
 
-
-class ViewController: UIViewController {
-    
     @IBOutlet weak var lblQuestion: UILabel!
     @IBOutlet weak var lblTotalCorrect: UILabel!
     @IBOutlet weak var lblCorrectIncorrect: UILabel!
+    
+    @IBOutlet weak var lblTimeLeft: UILabel!
     
     @IBOutlet weak var btnAnswer0: UIButton!
     @IBOutlet weak var btnAnswer1: UIButton!
@@ -31,26 +30,35 @@ class ViewController: UIViewController {
     var correctIncorrect = ""
     
     var buttonRandom = 0
-    var totalCorrect = 0
+    var score = 0
+    var bestCorrect = 0
     
     var incorrectAnswer1 = 0
     var incorrectAnswer2 = 0
     var incorrectAnswer3 = 0
     
+    var timeLeft = 60
+    var timer = Timer()
+    
+    var gameOver = false // if time run out
+    
     var audioPlayer = AVAudioPlayer()
     var audioPlayerSecond = AVAudioPlayer()
-
+    var audioPlayerThird = AVAudioPlayer()
+    
     override func viewDidLoad() {
+
         super.viewDidLoad()
         
+        bestCorrect = UserDefaults.standard.integer(forKey: "bestCorrect")
+        
+        startCounting()
+        
         randomizeTheNumbers()
-        
         printButtonText()
-        
         printStats()
         
         lblCorrectIncorrect.text = "\(NSLocalizedString("CORRECT_INCORRECT", comment: "Correct / Incorrect"))"
-        
     }
     
     func buttonPresedSoundPlay() {
@@ -63,12 +71,38 @@ class ViewController: UIViewController {
         }
         audioPlayerSecond.play()
     }
+    
+    func startCounting(){
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimeViewController.countDown), userInfo: nil, repeats: true)
+    }
+    
+    func countDown(){
+        let tick = NSURL(fileURLWithPath: Bundle.main.path(forResource: "tick", ofType: "mp3")!)
+        do {
+            audioPlayerSecond = try AVAudioPlayer(contentsOf: tick as URL)
+            audioPlayerSecond.prepareToPlay()
+        } catch {
+            print("Problem in getting File")
+        }
+        audioPlayerSecond.play()
+        
+        
+        
+        timeLeft -= 1
+        lblTimeLeft.text = NSLocalizedString("TIME", comment: "Time Left") + ": \(timeLeft)"
+        
+        if timeLeft == 0 {
+            timer.invalidate()
+            gameOverLogic()
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func btnAnswer0ACTION(_ sender: UIButton) {
         if buttonRandom == 0 {
             button0Correct()
@@ -113,12 +147,13 @@ class ViewController: UIViewController {
         printButtonText()
     }
     
-    @IBAction func btnResetACTION(_ sender: UIButton) {
+    @IBAction func btnRestartACTION(_ sender: UIButton) {
         resetButton()
         buttonPresedSoundPlay()
     }
     
     func randomizeTheNumbers(){
+        
         firstNumber = Int(arc4random_uniform(9))
         secondNumber = Int(arc4random_uniform(9))
         answer = firstNumber + secondNumber
@@ -197,7 +232,6 @@ class ViewController: UIViewController {
         }
         audioPlayer.play()
         
-        // Wrong answer logic
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         
         UIView.animate(withDuration: 0.8, animations: {
@@ -211,8 +245,7 @@ class ViewController: UIViewController {
         
         
         correctIncorrect = "\(NSLocalizedString("INCORRECT", comment: "Incorrect"))"
-        totalCorrect = totalCorrect - 1
-        saveBestScore()
+        score = score - 1
         printStats()
     }
     
@@ -243,7 +276,6 @@ class ViewController: UIViewController {
         }
         audioPlayer.play()
         
-        // other staff
         UIView.animate(withDuration: 0.8, animations: {
             self.view.backgroundColor = UIColor.green
             
@@ -254,36 +286,58 @@ class ViewController: UIViewController {
         }, completion: nil)
         
         
-        totalCorrect = totalCorrect + 1
-        saveBestScore()
-        
-        
+        score = score + 1
         correctIncorrect = "\(NSLocalizedString("CORRECT", comment: "Correct"))"
         printStats()
     }
     
     func saveBestScore(){
-        if totalCorrect > 0 {
-            UserDefaults.standard.setValue(totalCorrect, forKey: "totalCorrect")
+        if bestCorrect < score {
+            bestCorrect = score
+            UserDefaults.standard.setValue(bestCorrect, forKey: "bestCorrect")
             UserDefaults.standard.synchronize()
         }
+        
+        
+        print("best \(bestCorrect)")
     }
     
     func printStats(){
-        totalCorrect = UserDefaults.standard.integer(forKey: "totalCorrect")
         
-        lblTotalCorrect.text = NSLocalizedString("SCORE", comment: "Score") + ": \(totalCorrect)"
+        
+        lblTotalCorrect.text = NSLocalizedString("SCORE", comment: "Score") + ": \(score)"
         lblCorrectIncorrect.text = "\(correctIncorrect)"
     }
     
     func resetButton(){
-        totalCorrect = 0
-        UserDefaults.standard.removeObject(forKey: "totalCorrect")
+        timer.invalidate()
         
-        lblTotalCorrect.text = NSLocalizedString("SCORE", comment: "Score") + ": \(totalCorrect)"
+        timeLeft = 60
+        
+        lblTimeLeft.text = NSLocalizedString("TIME", comment: "Time Left") + ": \(timeLeft)"
+        lblTotalCorrect.text = NSLocalizedString("SCORE", comment: "Score") + ": \(score)"
         lblCorrectIncorrect.text = "\(NSLocalizedString("CORRECT_INCORRECT", comment: "Correct / Incorrect"))"
         randomizeTheNumbers()
+        
+        gameOver = false
+    }
+    
+    func gameOverLogic(){
+        gameOver = true
+        saveBestScore()
+        
+        let viewControllers: [UIViewController] = navigationController!.viewControllers as [UIViewController]
+        navigationController!.popToViewController(viewControllers[viewControllers.count - 2], animated: true)
     }
 
-}
+    /*
+    // MARK: - Navigation
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

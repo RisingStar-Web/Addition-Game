@@ -1,0 +1,75 @@
+
+/* Class = "UIButton"; normalTitle = "Answer 3"; ObjectID = "0VV-oF-p4w"; */
+"0VV-oF-p4w.normalTitle" = "Answer 3";
+
+/* Class = "UIButton"; normalTitle = "Answer 0"; ObjectID = "27u-8p-Mxb"; */
+"27u-8p-Mxb.normalTitle" = "Answer 0";
+
+/* Class = "UIButton"; normalTitle = "Answer 1"; ObjectID = "3tc-qK-pfs"; */
+"3tc-qK-pfs.normalTitle" = "Answer 1";
+
+/* Class = "UILabel"; text = "Endless Mode Score: 0"; ObjectID = "4kP-7V-tJE"; */
+"4kP-7V-tJE.text" = "Очков В бесконечном: 0";
+
+/* Class = "UIButton"; normalTitle = "Endless Mode"; ObjectID = "4wQ-OS-Vm9"; */
+"4wQ-OS-Vm9.normalTitle" = "Бесконечный";
+
+/* Class = "UINavigationItem"; title = "Time Mode"; ObjectID = "8J8-9H-c9S"; */
+"8J8-9H-c9S.title" = "На Время";
+
+/* Class = "UIButton"; normalTitle = "Answer 2"; ObjectID = "AXr-pA-nz7"; */
+"AXr-pA-nz7.normalTitle" = "Answer 2";
+
+/* Class = "UITabBarItem"; title = "Endless Mode"; ObjectID = "Ben-wb-r1F"; */
+"Ben-wb-r1F.title" = "Бесконечный";
+
+/* Class = "UILabel"; text = "0 + 0 = ?"; ObjectID = "H6G-yD-Gwc"; */
+"H6G-yD-Gwc.text" = "0 + 0 = ?";
+
+/* Class = "UIButton"; normalTitle = "Time Mode"; ObjectID = "Mll-Jw-Nk7"; */
+"Mll-Jw-Nk7.normalTitle" = "На Время";
+
+/* Class = "UILabel"; text = "Correct / Incorrect"; ObjectID = "MtR-2Q-yWM"; */
+"MtR-2Q-yWM.text" = "Верно / Не Верно";
+
+/* Class = "UILabel"; text = "Time Left: 60"; ObjectID = "S0N-Rb-YNT"; */
+"S0N-Rb-YNT.text" = "Время: 60";
+
+/* Class = "UINavigationItem"; title = "Endless Mode"; ObjectID = "Sjw-Hd-rlj"; */
+"Sjw-Hd-rlj.title" = "Бесконечный";
+
+/* Class = "UILabel"; text = "Time Mode Best Score: 0"; ObjectID = "UL8-cK-Y47"; */
+"UL8-cK-Y47.text" = "Очков На Время: 0";
+
+/* Class = "UILabel"; text = "Correct / Incorrect"; ObjectID = "UkS-E8-OK8"; */
+"UkS-E8-OK8.text" = "Верно / Не Верно";
+
+/* Class = "UILabel"; text = "Score: 0"; ObjectID = "Wel-HZ-hLi"; */
+"Wel-HZ-hLi.text" = "Очков: 0";
+
+/* Class = "UILabel"; text = "0 + 0 = ?"; ObjectID = "XGy-H5-PDQ"; */
+"XGy-H5-PDQ.text" = "0 + 0 = ?";
+
+/* Class = "UIButton"; normalTitle = "Restart"; ObjectID = "gNf-zO-fZ5"; */
+"gNf-zO-fZ5.normalTitle" = "Заново";
+
+/* Class = "UILabel"; text = "Score: 0"; ObjectID = "heG-I5-f58"; */
+"heG-I5-f58.text" = "Очков: 0";
+
+/* Class = "UIButton"; normalTitle = "Answer 0"; ObjectID = "o3O-k7-H7k"; */
+"o3O-k7-H7k.normalTitle" = "Answer 0";
+
+/* Class = "UIButton"; normalTitle = "Game Center"; ObjectID = "qQZ-u4-4K7"; */
+"qQZ-u4-4K7.normalTitle" = "Game Center";
+
+/* Class = "UIButton"; normalTitle = "Reset!"; ObjectID = "szb-FB-Q3r"; */
+"szb-FB-Q3r.normalTitle" = "Заново!";
+
+/* Class = "UIButton"; normalTitle = "Answer 1"; ObjectID = "tB3-Re-GKf"; */
+"tB3-Re-GKf.normalTitle" = "Answer 1";
+
+/* Class = "UIButton"; normalTitle = "Answer 2"; ObjectID = "tmh-nz-61N"; */
+"tmh-nz-61N.normalTitle" = "Answer 2";
+
+/* Class = "UIButton"; normalTitle = "Answer 3"; ObjectID = "vMn-XK-yTL"; */
+"vMn-XK-yTL.normalTitle" = "Answer 3";
